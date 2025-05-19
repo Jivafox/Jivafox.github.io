@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Letter from us - inuno</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1D25FF;
+      background-image: url('assets/bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      font-family: 'Poppins', 'Noto Sans SC', Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-image: url('assets/bg-mobile.png');
+      }
+    }
+    .nav-bar {
+      position: fixed;
+      top: 32px;
+      left: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    .nav-btns {
+      display: flex;
+      gap: 24px;
+      pointer-events: auto;
+    }
+    .nav-btn {
+      background: rgba(255,255,255,0.12);
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 20px;
+      padding: 8px 22px;
+      cursor: pointer;
+      transition: background 0.2s;
+      outline: none;
+      letter-spacing: 2px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .nav-btn:hover {
+      background: rgba(255,255,255,0.22);
+    }
+    .main-content {
+      width: 100%;
+      max-width: 700px;
+      margin: 120px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 22px;
+      letter-spacing: 6px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+    .divider {
+      width: 100%;
+      max-width: 3000px;
+      height: 0;
+      margin: 0 auto 30px auto;
+      opacity: 0.4;
+      border: none;
+      border-top: 1.5px dotted #fff;
+    }
+    .lang-tabs {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+    .lang-tab {
+      font-size: 16px;
+      color: #fff;
+      opacity: 0.7;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 2px;
+      padding: 0 8px 6px 8px;
+      border-bottom: none;
+      transition: opacity 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .lang-tab.active {
+      opacity: 1;
+    }
+    .lang-underline {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      background: #fff;
+      border-radius: 1px;
+      transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+      z-index: 0;
+      left: 0;
+      width: 0;
+    }
+    .letter-content {
+      text-align: left;
+      font-size: 14px;
+      font-family: 'Noto Sans SC', 'Poppins', Arial, sans-serif;
+      font-weight: 100;
+      line-height: 2.1;
+      opacity: 0.92;
+      margin-bottom: 60px;
+      margin-top: 0;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 700px) {
+      .main-content { max-width: 98vw; }
+      .divider { width: 96vw; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="nav-btns">
+      <a href="inuno.html" class="nav-btn">HOME</a>
+      <a href="document.html" class="nav-btn">BACK</a>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="section-title">LETTER FROM US</div>
+    <div class="divider"></div>
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="showLang('zh')">中文</button>
+      <button class="lang-tab" onclick="showLang('en')">ENGLISH</button>
+      <div class="lang-underline"></div>
+    </div>
+    <div id="letter-zh" class="letter-content">
+      <!-- 中文内容示例 -->
+      <p>一年以前我还是一名纯粹的设计师，在经历了一年的摸爬滚打后，姑且算是成为了一名"独立开发者"，说是开发者，其实也不过是借助ai的力量帮我完成了一些代码层面的工作，于是就诞生了以下产品。</p>
+
+      <p>说来惭愧，这两款产品都是我想尝试ai究竟能不能帮我实现独立开发的试验品。好像没有认真研究过需求就开始了。（心虚的很）</p>
+    
+      <p>所以在产品真的上线后，不免俗套的又被称为独立三件套。不过好在也有人喜欢，觉着做的很精致。在无数次想要开发更加有趣的产品时，他们像是被抛弃的孩子一样，在角落里看着我，于是我还是不忍心置之不顾，我也给自己下了一个目标，就是只要是交到用户手上的产品，至少阶段内它是完整的、精致的、至少是不辱设计师孩子之名。</p>
+    
+      <p>所以也才有了今天的TimeMunki和Booji。很高兴能获得你的支持与关注，这也是对他们存在的证明。</p>
+      
+      <div style="height: 30px;"></div>
+
+      <h3>🕒 TimeMunki</h3>
+      <p>关于Munki，这其实是我最早的一个ai代码项目，原名叫eggit，不过开发的时候似乎cursor还没有那么强大，所以它的雏形简陋的不像样，就像是原始时代造车，四个轮子外面套了一层壳，经不起推敲。</p>
+      <p>至于为什么想开发这个app，是因为有一次逛一家日本杂货店，看到里面有一个硅胶蛋，他是和蛋放在水中一起煮，会不断变色来告诉你现在蛋是什么熟度。那一刻我觉得很有意思，似乎我们生活中充满了将就，让我们忽略了像是一颗简单的鸡蛋，其实也可以拥有丰富的口感和味道，重要的是我们对待生活的态度。于是受到启发，我能不能也开发一款蛋计时器，来烹饪出自己想要的蛋。</p>
+      <p>理想是美好的，现实是骨感的，做的时候便无数次怀疑煮个蛋要这么复杂干嘛，而且每个人的烹饪工具都不一样，所以也没办法保证时间对于每个人来说是精准的。但想着不能半途而废的念头，最终还是把eggit干出来了，抱着摸一遍流程的想法，eggit出现在了付费区，过去了几个月似乎也没人下载（意料之中hhh），不过在我启动booji后，便把它移到了免费区。意料之外的事竟然收获了破千的下载量，虽然不多，但是第一次感到有人在下载使用这个简陋的产品，我决定还是对他更负责一点，于是便诞生了2.0的eggit，也就是现在的TimeMunki。</p>
+      <p>从eggit中获得的启发是，大家似乎对于计时有一定的需求，但蛋计时器实在算不上很大的点，但能不能把这些零散的点整合到一起，做一个有趣的计时器，这便是2.0的想法，我特别喜欢"喝水羊驼"这款产品，所以在开发的时候也想把可爱的动物形象结合进来，当然也有受到我家麦琪的启发（我家的猫），每天早上我蹲坑的时候，麦琪都会趴在我旁边，或是娱乐或是睡觉，这种被猫猫守护着的蹲坑感，真是好幸福。但我深知蹲坑是不能太久的，但又时常忘记，毕竟现在蹲坑和刷手机总是分不开，所以为了健康的蹲坑，计时器似乎比蛋更重要吧hh。</p>
+      <p>现在如果你也使用Munki，那么麦琪也会陪伴你一起健康蹲坑哦。虽然TimeMunki的场景还不多，但我能想象和你能期待的其实更多，所以就交给时间让他慢慢成长吧，我也十分期待能收到来自你的想法，让Munki变得更好。</p>
+
+      <div style="height: 30px;"></div>
+
+      <h3>📖 Booji</h3>
+      <p>对于booji，他就像是独立开发者绕不过的坎，所谓三件套之一的笔记软件。</p>
+      <p>一开始其实我也是充满了没必要的心态去开发的，但回想起无数个自己在阳台看书缺不知道该如何记笔记的场景，都坚定了我想做一个精致的读书笔记应用—专门为纸质书阅读而设计的笔记。即使现在我们有非常多的软件可以选择，包括我现在正在使用的notion，但我始终感觉这种"非专属感"让我失去兴致，最早我也是将笔记记录于bear中，但却发现自己鲜少拿起来看，因为读书笔记会置于各种内容之间，唯一所属的就只有一个简短的分类"读书笔记"。</p>
+      <p>出于想尊重那份真实的知识被记录的仪式感，booji诞生了，或许他没什么大用，甚至不符合主流的电子书阅读，但我还是希望那些持着书籍的阅读者，能够更好的把阅读纸质书这件事坚持下去。如果你正在使用booji，我希望这份对于真实的尊重能够让你感到惊喜。</p>
+      <p>booji的功能算不上强大，但是否能够很强大，我没有过多思考，或许他的诞生是为了更好的服务阅读本身，我希望你能因为想使用booji而再一次拿起书架上落灰的书籍。很多用户反馈想加上导入功能，但是我心中始终感觉，booji的导入只能是来源于你真实的阅读，所以迟迟犹豫未决，可能后续会有，但我还是希望这一刻来的慢些，也算是作者固执的坚持吧。</p>
+      <p>booji也如同timemunki一样未来其实也可以充满无限想象，但他的热度却远比munki低的多，到现在为止也只有不到300的下载量，可能大家以为是电子书软件却发现事与愿违后便离开了booji，但庆幸的是，我也收到了很多用户对于booji的支持，这也是booj能够不断更新与优化的动力。</p>
+      <p>到这里，暂且就是关于booji的故事了，如果你拥有booji，我很真挚在此向你表达感谢。</p>
+      <p>最后关于booji的名称，来源于book与biji的结合，好像没啥创意呢hhh。</p>
+    
+      <div style="height: 30px;"></div>
+
+      <h3>Next</h3>
+      <p>经历过以上两款产品的开发，我姑且算是一名独立的开发者。</p>
+      <p>在此之前，其实我幻想着能做一款影响很大的、能够影响他人人生的app，但被现实无情的打击了，在经历了无限的拖延后，我发现其实依赖他人真的是件十分困难的事，我会时常处于一种不确定状态，于是便决定从一些小产品入手，借助ai的力量慢慢起步。我想所谓独立开发者，都是被逼出来的吧hh。</p>
+      <p>在完成两款产品后，我也慢慢找到了一些自己的定位，即使现在市面上的应用眼花缭乱，数不胜数，我开发的也只是千军万马中不起眼的小小产品，但我希望我的产品是能够为你带来对真实生活的关注，我认为应用不是要抢占你越多的时间越成功，甚至手机也好，都不应该使得我们人作为主体丧失了对真实世界的观察，所以现在无论是抖音、短视频，他们作为产品十分的"成功"，但我却感觉十分的不适，我不希望我们陷入在听风便是雨的虚拟世界，而应该是我所感受到的真实才是真实。</p>
+      <p>所以我希望我的产品始终都是作为客体，他能够陪伴着你生活中的小场景，为你带来属于你的小确幸，或许用不上本来也可以很好，但如果你愿意使用，也许他们能有机会唤醒你对于生活更深一步的热忱，我想，这也是我希望借由产品带给大家的一份信念吧。"或许有，也可以更好"这将作为我的产品理念，贯彻下去，希望你也喜欢。</p>
+    
+      <div style="height: 30px;"></div>
+
+      <h3>最后</h3>
+      <p>虽然现在一个人也能勉强完成开发，但很多事还是超出了能力范围。</p>
+      <p>经历了反反复复，对于合作信心确实受到了打击，但我还是在此期待能够遇到志同道合的伙伴，能够一起创造属于我们认可的有价值的产品。</p>
+      <p>很多人找到我，聊的也很愉快，但到了真正谈项目的时候才发现。更多的只是抱着对我的期待而来，希望我能够给他带来足够多的想法，说是头脑风暴最后却沦为了对我创意与想法的单方面评审，这让我感到十分的失望。</p>
+      <p>过程中我也发现，他们的观点无一例外的形成了自相矛盾，对于市面上已经有的产品，持着没必要再做的立场；对于完全崭新的想法，又无法接受其带来的不确定性和可能存在的失败。到头来，只不过是在幻想着一个百分百成功的机会罢了。</p>
+      <p>在经历了一次次的信任又失望后，我也渐渐放平了心态，因为每个人都有每个人的人生，我们也无法要求他人与你一同承担风险，所以合作真的是一件缘分与机遇并存的事情。</p>
+      <p>但我仍保有期待，因为在过程中我也收获了许多，即使只是聊聊也有些启发，任何发生的事情都将成为自己的经历，而这些经历将帮助你成为未来的你。</p>
+      <p>所以，如果你感受到了我的这份志同道合，十分欢迎未来与我一起同行的你。</p>
+      <p>选择这条路十分的艰难与不易，但这却是我们真正活出属于自己人生的一种方式。</p>
+      <p>也许到头来真的只是一场空，但这份空，我也十分坚信能够成为我们的一份收获。</p>
+    </div>
+    <div id="letter-en" class="letter-content" style="display:none;">
+      <!-- English content sample -->
+      <p>A year ago, I was still a pure designer. After a year of trial and error, I can barely call myself an "indie developer." To be honest, most of the development was done with the help of AI, which guided me through the coding part. And that's how these products were born.</p>
+
+      <p>Frankly speaking, these two products were experimental—I simply wanted to test whether AI could truly help me become an indie creator. I jumped in without properly researching the real needs (guilty as charged).</p>
+      
+      <p>When they finally launched, they were inevitably called part of the "indie dev trio." Fortunately, some people liked them and found them refined. Every time I thought of building something new and more fun, I would feel a bit guilty—like those products were abandoned children quietly watching me from the corner. So I made a promise: any product I put into users' hands must be, at least at that stage, complete, refined, and worthy of the designer in me.</p>
+      
+      <p>That's how TimeMunki and Booji came to be. I'm truly grateful for your support and attention—it proves that they matter.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>🕒 TimeMunki</h3>
+      <p>TimeMunki was actually my first AI-assisted coding project. It was originally called eggit. Back then, Cursor wasn't as powerful, so its prototype was as rough as a stone-age car—four wheels and a frame, but little more.</p>
+      <p>The inspiration came from a visit to a Japanese lifestyle shop, where I saw a silicone egg timer that changed color while boiling with an egg, indicating its doneness. That moment sparked a thought—our lives are filled with compromises, and we often overlook the simple joys, like a perfectly cooked egg. It's not about the egg; it's about how we treat our lives. So, I wondered, could I create an egg timer app to cook the egg just the way we want?</p>
+      <p>The ideal was beautiful, but the reality was tough. I constantly questioned whether timing an egg needed to be this complicated, especially with everyone using different tools. Still, I pushed on, determined to complete it. The first version of eggit was launched as a paid app, and unsurprisingly, hardly anyone downloaded it. Later, when I started Booji, I made eggit free—and surprisingly, it got over a thousand downloads. That tiny success made me feel responsible for the app, so I released version 2.0—now known as TimeMunki.</p>
+      <p>Through eggit, I realized that people do have needs around timers. While the egg timer alone wasn't a big idea, what if I combined multiple use cases into one delightful experience? That became the vision for TimeMunki 2.0. I was inspired by apps like "Water Llama" and wanted to bring in cute animal characters. My cat, Maggie, was also a big part of the inspiration. She often sits beside me when I'm on the toilet—sometimes playing, sometimes sleeping. There's a strange joy in being guarded by a cat while doing your business. But I know it's unhealthy to sit too long. Still, I always forget—thanks to endless scrolling. So in a way, a toilet timer might be even more important than an egg one.</p>
+      <p>Now, if you're using Munki, Maggie is there to keep you company too. Although TimeMunki doesn't support many scenes yet, I can already imagine what's possible—and I'd love to hear your ideas for it too.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📖 Booji</h3>
+      <p>Booji is one of those things you can't avoid as an indie developer—a note-taking app, part of the infamous trio.</p>
+      <p>Initially, I didn't feel the need to build it, but I recalled countless moments on my balcony reading paper books and not knowing how to record my thoughts. That made me want to design a refined note-taking app specifically for physical books. Sure, there are tons of apps out there—I even use Notion myself—but none gave me that "this is mine" feeling. I used Bear for a while, but rarely revisited my notes because they were buried among other unrelated content. "Reading Notes" was just a category, nothing more.</p>
+      <p>To honor the act of recording real knowledge, I created Booji. Maybe it's not very useful, and maybe it doesn't fit into today's digital reading habits. But I still hope those who love holding real books will find joy in preserving the ritual of reading and remembering.</p>
+      <p>Booji may not be powerful, and I don't worry too much about whether it should be. Its purpose is to serve the act of reading itself. If it makes you want to pick up that dusty book on your shelf, then it has done its job. Many users have asked for an import feature, but I've always believed that the content in Booji should come from real, personal reading. That's why I've hesitated. Maybe one day, but not too soon—that's my stubborn stance.</p>
+      <p>Like TimeMunki, Booji has infinite possibilities. Yet its popularity lags behind—fewer than 300 downloads so far. Some users probably thought it was an ebook app and left disappointed. Still, I've received a lot of support and feedback, which continues to motivate me to improve it.</p>
+      <p>That's Booji's story for now. If you're using it, thank you sincerely.</p>
+      <p>The name comes from a mix of "book" and "biji" (note). Not the most creative, I know—haha.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>Next</h3>
+      <p>After building these two apps, I can say I'm sort of an indie developer.</p>
+      <p>I once dreamed of creating an app that would change lives. But reality crushed that. After endless procrastination, I realized how hard it is to depend on others. I was constantly in a state of uncertainty. So, I started small and leaned on AI to move forward. Maybe all indie devs are born out of frustration—haha.</p>
+      <p>Now, I've found some footing. The app world is overcrowded, and my apps are just tiny drops in an ocean. But I hope they help you pay attention to real life. I don't think a good app is one that steals more of your time. I don't think phones should disconnect us from the real world. That's why apps like TikTok make me uncomfortable—even if they're "successful" products.</p>
+      <p>My hope is that my apps remain humble companions—helping in little moments of your day, bringing a sense of joy or mindfulness. Maybe you don't need them, but if you choose to use them, perhaps they'll rekindle your passion for living well. That's the belief I want my products to carry: "Maybe it exists, maybe it can be better." That's my design philosophy. I hope you like it too.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>Lastly</h3>
+      <p>Though I can barely handle development alone, some things are still beyond my ability.</p>
+      <p>After repeated letdowns, my confidence in collaboration has taken hits. But I still hope to meet kindred spirits—people who want to build something meaningful together.</p>
+      <p>Many reached out, and we had pleasant chats. But when it came to actual work, I realized most were just expecting ideas from me. They wanted brainstorming sessions that turned into one-sided pitches. It left me disappointed.</p>
+      <p>Most held contradictory views—thinking existing apps don't need redoing, yet fearing new ideas because they might fail. In the end, they were chasing some impossible, guaranteed-success scenario.</p>
+      <p>After many rounds of trust and disappointment, I've grown more relaxed. Everyone lives their own life. We can't expect others to take risks with us. Collaboration is about timing and fate.</p>
+      <p>Still, I remain hopeful. I've gained so much from every conversation—insights, inspiration. Everything we go through helps shape who we become.</p>
+      <p>So if you resonate with my thoughts, I warmly welcome the chance to walk this path together in the future.</p>
+      <p>This journey is hard, uncertain, and lonely—but it's also a way to truly live life on your own terms.</p>
+      <p>Maybe it'll all come to nothing. But even so, I believe that "nothing" will still be something worth having.</p>      
+    </div>
+  </div>
+  <script>
+    function showLang(lang) {
+      document.getElementById('letter-zh').style.display = lang === 'zh' ? '' : 'none';
+      document.getElementById('letter-en').style.display = lang === 'en' ? '' : 'none';
+      var tabs = document.querySelectorAll('.lang-tab');
+      tabs.forEach(function(tab, idx) {
+        if ((lang === 'zh' && idx === 0) || (lang === 'en' && idx === 1)) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      updateUnderline();
+    }
+    function updateUnderline() {
+      var tabs = document.querySelectorAll('.lang-tab');
+      var underline = document.querySelector('.lang-underline');
+      var activeTab = document.querySelector('.lang-tab.active');
+      if (activeTab && underline) {
+        var rect = activeTab.getBoundingClientRect();
+        var parentRect = activeTab.parentElement.getBoundingClientRect();
+        underline.style.left = (rect.left - parentRect.left) + 'px';
+        underline.style.width = rect.width + 'px';
+      }
+    }
+    window.addEventListener('DOMContentLoaded', updateUnderline);
+    window.addEventListener('resize', updateUnderline);
+  </script>
+</body>
+</html>

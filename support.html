@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Technical Support - inuno</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1D25FF;
+      background-image: url('assets/bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      font-family: 'Poppins', 'Noto Sans SC', Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-image: url('assets/bg-mobile.png');
+      }
+    }
+    .nav-bar {
+      position: fixed;
+      top: 32px;
+      left: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    .nav-btns {
+      display: flex;
+      gap: 24px;
+      pointer-events: auto;
+    }
+    .nav-btn {
+      background: rgba(255,255,255,0.12);
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 20px;
+      padding: 8px 22px;
+      cursor: pointer;
+      transition: background 0.2s;
+      outline: none;
+      letter-spacing: 2px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .nav-btn:hover {
+      background: rgba(255,255,255,0.22);
+    }
+    .main-content {
+      width: 100%;
+      max-width: 700px;
+      margin: 120px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 22px;
+      letter-spacing: 6px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+    .divider {
+      width: 100%;
+      max-width: 3000px;
+      height: 0;
+      margin: 0 auto 30px auto;
+      opacity: 0.4;
+      border: none;
+      border-top: 1.5px dotted #fff;
+    }
+    .lang-tabs {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+    .lang-tab {
+      font-size: 16px;
+      color: #fff;
+      opacity: 0.7;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 2px;
+      padding: 0 8px 6px 8px;
+      border-bottom: none;
+      transition: opacity 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .lang-tab.active {
+      opacity: 1;
+    }
+    .lang-underline {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      background: #fff;
+      border-radius: 1px;
+      transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+      z-index: 0;
+      left: 0;
+      width: 0;
+    }
+    .support-content {
+      text-align: left;
+      font-size: 14px;
+      font-family: 'Noto Sans SC', 'Poppins', Arial, sans-serif;
+      font-weight: 100;
+      line-height: 2.1;
+      opacity: 0.92;
+      margin-bottom: 60px;
+      margin-top: 0;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 700px) {
+      .main-content { max-width: 98vw; }
+      .divider { width: 96vw; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="nav-btns">
+      <a href="inuno.html" class="nav-btn">HOME</a>
+      <a href="document.html" class="nav-btn">BACK</a>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="section-title">TECHNICAL SUPPORT</div>
+    <div class="divider"></div>
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="showLang('zh')">中文</button>
+      <button class="lang-tab" onclick="showLang('en')">ENGLISH</button>
+      <div class="lang-underline"></div>
+    </div>
+    <div id="support-zh" class="support-content">
+      <!-- 中文技术支持内容 -->
+      <h3>📌 应用简介</h3>
+      <p>欢迎使用本应用！这是一款为日常生活打造的轻量工具，界面简洁、使用方便，支持完全离线操作，无需登录账号或连接网络。希望它能为你带来一点点便利和舒适的使用体验。</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 常见问题</h3>
+      <p><strong>Q：需要联网或注册账号吗？</strong><br>
+      A：不需要。应用在离线状态下也能完整使用，无需登录或绑定任何账户。</p>
+      
+      <p><strong>Q：我的数据会被上传吗？</strong><br>
+      A：不会。所有数据都保存在你自己的设备本地，应用不会连接远程服务器，也不会上传或分享数据。</p>
+      
+      <p><strong>Q：能不能调整一些默认设置？</strong><br>
+      A：可以。应用支持一定程度的偏好设置，比如界面样式、默认选项等，具体可根据使用场景灵活配置。</p>
+      
+      <p><strong>Q：支持深色模式吗？</strong><br>
+      A：支持。应用会自动跟随系统外观设置，适配深色或浅色界面。</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 如何开始使用</h3>
+      <p>只需从 App Store 下载并打开应用，无需任何额外步骤。首次启动时可按提示完成简单设置，也可以直接开始使用。</p>
+      
+      <p>应用不会要求联网或登录，所有操作本地完成，数据仅你自己可见。使用过程既轻松，又安心。</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 应用特性</h3>
+      <p>不同应用可能提供不同功能，但基本上，你会体验到这些共同点：</p>
+      <ul>
+        <li>💡 离线运行，无需登录</li>
+        <li>🔐 数据保存在本地，不上传</li>
+        <li>🧭 简洁的界面交互</li>
+        <li>⚙️ 可配置的偏好设置</li>
+        <li>🚫 无广告、无跟踪、不打扰</li>
+      </ul>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 常见问题排查</h3>
+      <p>如果遇到异常情况，可以尝试以下操作：</p>
+      <ul>
+        <li>关闭应用后重新打开</li>
+        <li>确保设备系统为 iOS 16 或更高</li>
+        <li>从 App Store 卸载并重新安装</li>
+        <li>尝试重启设备</li>
+        <li>检查设备剩余存储空间是否充足</li>
+      </ul>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 联系与反馈</h3>
+      <p>如果你在使用过程中有任何疑问或建议，欢迎通过以下方式联系我们：</p>
+      <p><strong>邮箱：</strong>weizhihua2024@163.com</p>
+      <p>我们会尽快回复你，持续优化使用体验。感谢你的支持与信任，愿这个小工具为你的生活增添一点轻盈和秩序。</p>          </div>
+    <div id="support-en" class="support-content" style="display:none;">
+      <!-- English support content -->
+      <h3>📌 App Overview</h3>
+      <p>Welcome! This app is designed to offer a lightweight, efficient, and distraction-free experience. You can use it entirely offline—no account creation or network connection is required. Whether it's a daily utility or a simple helper, this app aims to make your day a bit easier.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 Frequently Asked Questions</h3>
+      <p><strong>Q: Do I need to log in or connect to the internet?</strong><br>
+      A: No. All features are available offline and do not require login or registration.</p>
+      
+      <p><strong>Q: Is any of my data uploaded or shared?</strong><br>
+      A: No. All data is stored locally on your device. The app does not connect to any external server or third-party service.</p>
+      
+      <p><strong>Q: Can I customize settings?</strong><br>
+      A: Yes. Some preferences can be adjusted to suit your usage habits—like default views, options, or appearance settings.</p>
+      
+      <p><strong>Q: Does it support dark mode?</strong><br>
+      A: Absolutely. The app follows your system appearance settings and adjusts the interface accordingly.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 Getting Started</h3>
+      <p>Simply download the app from the App Store and open it—no setup or login required. You’ll be guided through optional customization if available, and can start using the app immediately.</p>
+      
+      <p>Everything runs locally, so even your first use is fast and private. You’re in full control of what the app remembers and displays.</p>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 Key Features</h3>
+      <p>Feature availability may vary depending on the app, but here’s what most offer:</p>
+      <ul>
+        <li>💡 Offline-first experience, no sign-in needed</li>
+        <li>🔐 Local-only data storage</li>
+        <li>🧭 Minimal UI with simple interactions</li>
+        <li>⚙️ Optional settings to personalize your experience</li>
+        <li>🚫 No ads, no trackers, no pushy prompts</li>
+      </ul>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 Troubleshooting Tips</h3>
+      <p>If something isn’t working as expected, try the following steps:</p>
+      <ul>
+        <li>Close and reopen the app</li>
+        <li>Make sure your device runs a supported OS (iOS 16+ recommended)</li>
+        <li>Reinstall the app from the App Store</li>
+        <li>Restart your device</li>
+        <li>Ensure you have enough free storage space</li>
+      </ul>
+      
+      <div style="height: 30px;"></div>
+      
+      <h3>📌 Contact & Support</h3>
+      <p>We’re here to help. If you have any questions, feedback, or just want to say hi, reach out to us:</p>
+      <p><strong>Email:</strong>weizhihua2024@163.com</p>
+      <p>We do our best to respond in a timely and thoughtful way. Thanks for using our app—we hope it brings a bit of ease and clarity to your day.</p>          </div>
+  </div>
+  <script>
+    function showLang(lang) {
+      document.getElementById('support-zh').style.display = lang === 'zh' ? '' : 'none';
+      document.getElementById('support-en').style.display = lang === 'en' ? '' : 'none';
+      var tabs = document.querySelectorAll('.lang-tab');
+      tabs.forEach(function(tab, idx) {
+        if ((lang === 'zh' && idx === 0) || (lang === 'en' && idx === 1)) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      updateUnderline();
+    }
+    function updateUnderline() {
+      var tabs = document.querySelectorAll('.lang-tab');
+      var underline = document.querySelector('.lang-underline');
+      var activeTab = document.querySelector('.lang-tab.active');
+      if (activeTab && underline) {
+        var rect = activeTab.getBoundingClientRect();
+        var parentRect = activeTab.parentElement.getBoundingClientRect();
+        underline.style.left = (rect.left - parentRect.left) + 'px';
+        underline.style.width = rect.width + 'px';
+      }
+    }
+    window.addEventListener('DOMContentLoaded', updateUnderline);
+    window.addEventListener('resize', updateUnderline);
+  </script>
+</body>
+</html>

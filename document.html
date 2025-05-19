@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Documents - inuno</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1D25FF;
+      background-image: url('assets/bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      font-family: 'Poppins', 'Noto Sans SC', Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-image: url('assets/bg-mobile.png');
+      }
+    }
+    .main-logo {
+      position: fixed;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 48px;
+      height: auto;
+      cursor: pointer;
+      z-index: 1000;
+      transition: transform 0.2s cubic-bezier(.4,0,.2,1);
+    }
+    @keyframes breathing {
+      0% { transform: translateX(-50%) scale(1); }
+      50% { transform: translateX(-50%) scale(1.12); }
+      100% { transform: translateX(-50%) scale(1); }
+    }
+    .main-logo:hover {
+      animation: breathing 1.2s infinite;
+    }
+    .section-title {
+      margin-top: 20px;
+      margin-bottom: 90px;
+      font-size: 18px;
+      letter-spacing: 4px;
+      text-align: center;
+      font-weight: 300;
+    }
+    .doc-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 90px;
+      margin-bottom: 80px;
+    }
+    .doc-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .doc-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .doc-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      margin-top: 4px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s cubic-bezier(.4,0,.2,1);
+      height: auto;
+    }
+    .doc-item:hover .doc-icon {
+      transform: scale(1.1) rotate(8deg);
+      z-index: 2;
+    }
+    .doc-item:hover .doc-link {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .contact-section {
+      margin-top: 120px;
+      text-align: center;
+    }
+    .contact-title {
+      font-size: 16px;
+      letter-spacing: 4px;
+      margin-bottom: 60px;
+      font-weight: 300;
+    }
+    .contact-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 10px;
+    }
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+      border: none;
+    }
+    .contact-icon img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    .divider {
+      width: 100%;;
+      max-width: 3000px;
+      height: 0;
+      margin: 20px auto 0 auto;
+      opacity: 0.4;
+      border: none;
+      border-top: 1.5px dotted #fff;
+    }
+    .main-content {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 90px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部logo，点击返回inuno.html -->
+  <a href="inuno.html">
+    <img src="assets/logo-main.png" alt="Logo" class="main-logo" />
+  </a>
+  <div class="main-content">
+    <!-- 文档区 -->
+    <div class="section-title">OUR DOCUMENTS</div>
+    <div class="doc-list">
+      <div class="doc-item">
+        <a href="letter.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;">
+          <div class="doc-icon" style="font-size:40px;line-height:1;">✉️</div>
+          <span class="doc-link">[Letter from us]</span>
+        </a>
+      </div>
+      <div class="doc-item">
+        <a href="privacy.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;">
+          <div class="doc-icon" style="font-size:40px;line-height:1;">📋</div>
+          <span class="doc-link">[Privacy Policy]</span>
+        </a>
+      </div>
+      <div class="doc-item">
+        <a href="support.html" style="text-decoration:none;display:flex;flex-direction:column;align-items:center;">
+          <div class="doc-icon" style="font-size:40px;line-height:1;">💡</div>
+          <span class="doc-link">[Technical Support]</span>
+        </a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <!-- 联系方式 -->
+    <div class="contact-section">
+      <div class="contact-title">CONTACT / JOIN US</div>
+      <div class="contact-icons">
+        <a href="https://www.xiaohongshu.com/user/profile/5f4e5aed000000000101d171?xsec_token=YBZ72mf_IXzPdfh70pwyAf61rPGBj2T20vTZQtEUAOHAU=&xsec_source=app_share&xhsshare=WeixinSession&appuid=5f4e5aed000000000101d171&apptime=1747628189&share_id=4b038857b5764f6a97712e3bd624d922&wechatWid=ae1d699b5838f3084f695727d73f71bf&wechatOrigin=menu" class="contact-icon"><img src="assets/xiaohongshu.png" alt="小红书" /></a>
+        <a href="https://www.instagram.com/jivafoxen2025/" class="contact-icon"><img src="assets/instagram.png" alt="Instagram" /></a>
+        <a href="https://x.com/Jiva25" class="contact-icon"><img src="assets/x.png" alt="X" /></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

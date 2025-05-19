@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy - inuno</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1D25FF;
+      background-image: url('assets/bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      font-family: 'Poppins', 'Noto Sans SC', Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      body {
+        background-image: url('assets/bg-mobile.png');
+      }
+    }
+    .nav-bar {
+      position: fixed;
+      top: 32px;
+      left: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      pointer-events: none;
+    }
+    .nav-btns {
+      display: flex;
+      gap: 24px;
+      pointer-events: auto;
+    }
+    .nav-btn {
+      background: rgba(255,255,255,0.12);
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      border-radius: 20px;
+      padding: 8px 22px;
+      cursor: pointer;
+      transition: background 0.2s;
+      outline: none;
+      letter-spacing: 2px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .nav-btn:hover {
+      background: rgba(255,255,255,0.22);
+    }
+    .main-content {
+      width: 100%;
+      max-width: 700px;
+      margin: 120px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 22px;
+      letter-spacing: 6px;
+      font-weight: 300;
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+    .divider {
+      width: 100%;
+      max-width: 3000px;
+      height: 0;
+      margin: 0 auto 30px auto;
+      opacity: 0.4;
+      border: none;
+      border-top: 1.5px dotted #fff;
+    }
+    .lang-tabs {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+    .lang-tab {
+      font-size: 16px;
+      color: #fff;
+      opacity: 0.7;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: 2px;
+      padding: 0 8px 6px 8px;
+      border-bottom: none;
+      transition: opacity 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .lang-tab.active {
+      opacity: 1;
+    }
+    .lang-underline {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      background: #fff;
+      border-radius: 1px;
+      transition: left 0.3s cubic-bezier(.4,0,.2,1), width 0.3s cubic-bezier(.4,0,.2,1);
+      z-index: 0;
+      left: 0;
+      width: 0;
+    }
+    .privacy-content {
+      text-align: left;
+      font-size: 14px;
+      font-family: 'Noto Sans SC', 'Poppins', Arial, sans-serif;
+      font-weight: 100;
+      line-height: 2.1;
+      opacity: 0.92;
+      margin-bottom: 60px;
+      margin-top: 0;
+      letter-spacing: 0.2px;
+    }
+    @media (max-width: 700px) {
+      .main-content { max-width: 98vw; }
+      .divider { width: 96vw; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="nav-btns">
+      <a href="inuno.html" class="nav-btn">HOME</a>
+      <a href="document.html" class="nav-btn">BACK</a>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="section-title">PRIVACY POLICY</div>
+    <div class="divider"></div>
+    <div class="lang-tabs">
+      <button class="lang-tab active" onclick="showLang('zh')">中文</button>
+      <button class="lang-tab" onclick="showLang('en')">ENGLISH</button>
+      <div class="lang-underline"></div>
+    </div>
+    <div id="privacy-zh" class="privacy-content">
+      <!-- 中文隐私政策内容 -->
+      <h3>🛠 应用功能说明</h3>
+      <p>本应用是一款无需联网、无需登录、数据本地存储的工具类软件，所有功能均可离线完成，无需依赖任何服务器或第三方服务。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📦 数据收集与使用说明</h3>
+      <p><strong>本地存储：</strong>本应用生成的所有数据，包括设置、使用记录等，均保存在用户设备本地，不会上传或同步。</p>
+      <p><strong>不收集个人信息：</strong>我们不会要求您填写姓名、电话、邮箱、地址、支付信息等任何身份相关内容。</p>
+      <p><strong>不访问系统权限：</strong>我们不会请求通讯录、相机、麦克风、位置等权限，所有操作均可在不授权的前提下完成。</p>
+      <p><strong>无广告分析：</strong>应用不集成任何广告或数据分析 SDK，也不推送广告内容或进行用户行为追踪。</p>
+      <p><strong>性能数据：</strong>未来若需收集崩溃日志或性能信息，将在获得您的明确同意后进行，并以匿名方式处理。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>🔒 数据共享与披露</h3>
+      <p><strong>不与第三方共享：</strong>我们不会出售、出租或交换任何用户数据。</p>
+      <p><strong>法律义务：</strong>若法律要求，我们将在合法范围内提供必要信息。</p>
+      <p><strong>资产转让：</strong>如发生并购或重组，我们将提前通知您，并尊重您的选择权。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>🧭 用户权利与数据管理</h3>
+      <p><strong>数据控制权：</strong>用户可随时查看、编辑或删除本地数据。</p>
+      <p><strong>数据删除：</strong>卸载应用将清除所有数据，操作不可恢复。</p>
+      <p><strong>数据导出：</strong>未来若支持数据导出，用户可将数据保存至本地备份。</p>
+      <p><strong>更换设备：</strong>建议使用官方的系统迁移工具手动转移应用数据。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>💰 支付与购买（如适用）</h3>
+      <p><strong>购买方式：</strong>如应用包含付费项目，均由 App Store 完成交易，我们不接触任何支付信息。</p>
+      <p><strong>退款政策：</strong>遵循平台方退款流程，如需退款请联系 Apple 官方客服。</p>
+      <p><strong>权益说明：</strong>付费项目为一次性购买，永久有效。如未来调整，将提前通知用户。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>👶 儿童隐私保护</h3>
+      <p>本应用并非专为 13 岁以下儿童设计，不主动收集任何未成年人信息。若儿童使用，建议在监护人陪同下使用。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>🛡 数据安全与保护</h3>
+      <p><strong>本地安全：</strong>所有数据本地存储，避免网络传输风险。</p>
+      <p><strong>权限透明：</strong>我们不会请求与功能无关的系统权限。</p>
+      <p><strong>用户责任：</strong>请妥善保管您的设备，避免数据因丢失、被盗等风险泄露。</p>
+      <p><strong>安全建议：</strong>建议开启设备密码、人脸识别或指纹识别功能，提升安全性。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>⚠️ 免责声明</h3>
+      <p><strong>数据丢失：</strong>因误操作、设备问题等造成的数据丢失，我们不承担责任。</p>
+      <p><strong>功能限制：</strong>部分功能可能受系统或设备限制无法完全支持。</p>
+      <p><strong>合法使用：</strong>用户应遵守法律法规，禁止使用本应用从事非法活动。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📩 协议更新</h3>
+      <p><strong>修改权利：</strong>我们保留随时更新本协议的权利，重大变更将通过应用提示通知用户。</p>
+      <p><strong>使用即视为同意：</strong>如您在更新后继续使用应用，即视为同意本协议的全部内容。</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📮 联系方式</h3>
+      <p>如您对本隐私协议有任何疑问或建议，欢迎联系：</p>
+      <p><strong>weizhihua2024@163.com</strong></p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📝 字体声明</h3>
+      <p>本应用使用的字体遵循开源授权协议。例如 Roboto Mono 字体基于 Apache License 2.0，由 Google 提供。</p>      
+    </div>
+    <div id="privacy-en" class="privacy-content" style="display:none;">
+      <!-- English privacy policy content -->
+      <h3>🛠 App Functionality</h3>
+      <p>This application is a tool that operates entirely offline, requiring no internet connection or user login. All features are designed to work locally on your device without relying on any external servers or services.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📦 Data Collection & Usage</h3>
+      <p><strong>Local Storage:</strong> All data generated by the app, including user settings and activity records, is stored only on your device and never uploaded or synced to any server.</p>
+      <p><strong>No Personal Information Collected:</strong> We do not collect or request personal data such as your name, phone number, email address, location, or payment details.</p>
+      <p><strong>No Permission Access:</strong> The app does not request access to your contacts, camera, microphone, location, or any sensitive system permissions unless explicitly required and granted.</p>
+      <p><strong>No Ads or Analytics:</strong> This app contains no third-party advertising or analytics SDKs. It does not track your behavior or push promotional content.</p>
+      <p><strong>Performance Logs:</strong> Should crash reports or performance logs be needed in future versions, they will only be collected with your explicit consent and will remain fully anonymous.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>🔒 Data Sharing & Disclosure</h3>
+      <p><strong>No Third-Party Sharing:</strong> We do not sell, rent, trade, or share your data with any third parties.</p>
+      <p><strong>Legal Compliance:</strong> If required by law (e.g., through a court order), we will disclose necessary information within the legal scope.</p>
+      <p><strong>Business Transfers:</strong> In the event of a merger, acquisition, or restructuring, we will notify users in advance and respect their data rights.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>🧭 User Rights & Data Control</h3>
+      <p><strong>Control:</strong> You have full control over your locally stored data and may view, edit, or delete it at any time.</p>
+      <p><strong>Data Deletion:</strong> Uninstalling the app will permanently delete all app data from your device. This action is irreversible.</p>
+      <p><strong>Data Export:</strong> If a data export feature is added in the future, you’ll be able to back up your data locally for safekeeping.</p>
+      <p><strong>Device Migration:</strong> We recommend using your platform’s official device migration tools (e.g., Apple’s Quick Start) to move data when switching devices.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>💰 Purchases & Payments (If Applicable)</h3>
+      <p><strong>Payment Process:</strong> All payments are processed through the App Store. We do not access or store any payment-related information.</p>
+      <p><strong>Refunds:</strong> Refunds follow the official policy of the app store platform. Please contact Apple directly for assistance.</p>
+      <p><strong>Lifetime Access:</strong> Once purchased, premium features are permanently unlocked. If future changes are made, users will be notified in advance.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>👶 Children’s Privacy</h3>
+      <p>This application is not designed for children under 13 years of age and does not intentionally collect any information from minors. If a child uses the app, we recommend doing so under parental supervision.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>🛡 Data Security & Protection</h3>
+      <p><strong>Local Storage:</strong> All data is kept on-device, reducing the risk of exposure through network transmission.</p>
+      <p><strong>Transparent Permissions:</strong> The app will only request system permissions when necessary for core functionality, and always with prior notice.</p>
+      <p><strong>User Responsibility:</strong> Please protect your device to avoid data loss or leakage due to theft or damage.</p>
+      <p><strong>Security Tips:</strong> We recommend enabling a screen lock, Face ID, or Touch ID on your device to enhance protection.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>⚠️ Disclaimer</h3>
+      <p><strong>Data Loss:</strong> We are not responsible for any loss of data caused by user error, device failure, or other external factors.</p>
+      <p><strong>Feature Limitations:</strong> Certain features may be limited by device model or operating system version.</p>
+      <p><strong>Legal Use:</strong> Users must comply with all applicable laws and must not use the app for illegal activities.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📩 Policy Updates</h3>
+      <p><strong>Right to Update:</strong> We reserve the right to revise this privacy policy at any time. Significant changes will be communicated via the app.</p>
+      <p><strong>Continued Use:</strong> By continuing to use the app after changes are published, you agree to the updated policy terms.</p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📮 Contact</h3>
+      <p>If you have any questions or feedback regarding this privacy policy, please contact us at:</p>
+      <p><strong>weizhihua2024@163.com</strong></p>
+      
+      <div style="height: 24px;"></div>
+      
+      <h3>📝 Font License</h3>
+      <p>This app uses certain fonts licensed under open-source agreements. For example, the Roboto Mono font is licensed under the Apache License 2.0 and provided by Google.</p>          </div>
+  </div>
+  <script>
+    function showLang(lang) {
+      document.getElementById('privacy-zh').style.display = lang === 'zh' ? '' : 'none';
+      document.getElementById('privacy-en').style.display = lang === 'en' ? '' : 'none';
+      var tabs = document.querySelectorAll('.lang-tab');
+      tabs.forEach(function(tab, idx) {
+        if ((lang === 'zh' && idx === 0) || (lang === 'en' && idx === 1)) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      updateUnderline();
+    }
+    function updateUnderline() {
+      var tabs = document.querySelectorAll('.lang-tab');
+      var underline = document.querySelector('.lang-underline');
+      var activeTab = document.querySelector('.lang-tab.active');
+      if (activeTab && underline) {
+        var rect = activeTab.getBoundingClientRect();
+        var parentRect = activeTab.parentElement.getBoundingClientRect();
+        underline.style.left = (rect.left - parentRect.left) + 'px';
+        underline.style.width = rect.width + 'px';
+      }
+    }
+    window.addEventListener('DOMContentLoaded', updateUnderline);
+    window.addEventListener('resize', updateUnderline);
+  </script>
+</body>
+</html>
