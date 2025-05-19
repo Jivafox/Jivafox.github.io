@@ -14,7 +14,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #1D25FF;
+      background-color: #000000;
       background-image: url('assets/bg.png');
       background-repeat: no-repeat;
       background-position: center center;
@@ -87,6 +87,13 @@
       width: 360px;
       max-width: 80vw;
       height: auto;
+      transition: transform 0.2s cubic-bezier(.4,0,.2,1);
+      animation: breathing 4s infinite;
+    }
+    @keyframes breathing {
+      0% { transform: scale(0.8); opacity: 0.2; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(0.8); opacity: 0.2; }
     }
     .desc {
       position: static;
@@ -217,13 +224,23 @@
       font-size: 12px;
       font-family: 'Noto Sans SC', Arial, sans-serif;
       font-weight: 400;
-      margin-top: 40px;
+      margin-top: 0;
       margin-bottom: 30px;
       opacity: 0.8;
       line-height: 1.8;
     }
     .icp {
       display: none;
+    }
+    .word-icon {
+      margin: 0 auto 0 auto;
+      width: 18px;
+      height: auto;
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    .word-icon:hover {
+      transform: scale(1.1) rotate(8deg);
+      z-index: 2;
     }
   </style>
 </head>
@@ -267,6 +284,9 @@
         </div>
       </div>
     </div>
+    <a href="document.html">
+      <img src="assets/word.png" alt="@" class="word-icon" style="cursor:pointer;" />
+    </a>
   </div>
   <div class="footer" style="margin-bottom: 10px;">inuno</div>
   <div class="footer" style="margin-top: 0;">
