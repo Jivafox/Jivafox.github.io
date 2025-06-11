@@ -242,6 +242,86 @@
       transform: scale(1.1) rotate(8deg);
       z-index: 2;
     }
+    
+    /* 移动端响应式设计 */
+    @media (max-width: 768px) {
+      .main-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      .title {
+        margin-top: 80px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        letter-spacing: 4px;
+        padding: 0 20px;
+        text-align: center;
+        width: calc(100% - 40px);
+      }
+      
+      .main-logo {
+        width: 280px;
+        margin: 20px auto 40px auto;
+      }
+      
+      .desc {
+        width: calc(100% - 40px);
+        margin: 0 auto 120px auto;
+        padding: 0 20px;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      
+      .divider {
+        width: calc(100% - 40px);
+        margin: 0 auto 120px auto;
+      }
+      
+      .products-section {
+        width: 100%;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+      
+      .products-title {
+        font-size: 18px;
+        letter-spacing: 4px;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      
+      .products-row {
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 80px;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .product-item {
+        width: 160px;
+        align-items: center;
+      }
+      
+      .product-box, .product-box.dark, .product-box.g-unit {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .footer {
+        padding: 0 20px;
+        font-size: 11px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+    }
   </style>
 </head>
 <body>
@@ -281,6 +361,15 @@
           </a>
           <div class="product-name">[unitor]</div>
           <div class="product-desc">Unit Price Calculator</div>
+        </div>
+        <div class="product-item">
+          <a href="https://apps.apple.com/app/id6746231087" target="_blank" class="product-link" style="text-decoration:none;">
+            <div class="product-box">
+              <img src="assets/grapad.png" alt="Grapad" class="product-img" />
+            </div>
+          </a>
+          <div class="product-name">[Grapad]</div>
+          <div class="product-desc">Wallpaper Maker & Creator</div>
         </div>
       </div>
     </div>
