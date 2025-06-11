@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>inuno</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <meta name="Generator" content="Cocoa HTML Writer">
@@ -21,7 +22,9 @@
       background-size: cover;
       background-attachment: scroll;
       min-height: 100vh;
-      min-width: 100vw;
+      width: 100%;
+      min-width: unset;
+      overflow-x: hidden;
       position: relative;
       font-family: 'Poppins', 'Noto Sans SC', Arial, sans-serif;
       color: #fff;
@@ -46,15 +49,7 @@
       left: 0;
       top: 0;
     }
-    .rotate-box {
-      width: 544.2px;
-      height: 600px;
-      position: absolute;
-      left: 660px;
-      top: 864.2px;
-      transform: rotate(-90deg);
-      transform-origin: top left;
-    }
+
     .main-content {
       flex: 1 0 auto;
       display: flex;
@@ -249,6 +244,8 @@
         overflow-x: hidden;
       }
       
+
+      
       .main-content {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -364,7 +361,7 @@
   </style>
 </head>
 <body>
-  <div class="rotate-box"></div>
+
   <div class="main-content">
     <div class="title">IN TO THE UNKNOW</div>
     <img src="assets/logo-main.png" alt="Logo" class="main-logo" />
